@@ -6,8 +6,8 @@ const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  const genero = document.querySelector('input[name="genero"]:checked').value;
   const nombre = nombre_input.value;
 
-  div.innerHTML = "<p> Hola " + saludar(nombre) + "</p>";
+  div.innerHTML = "<p> Hola " + saludar(nombre, genero) + "</p>";
 });
