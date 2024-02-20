@@ -15,6 +15,7 @@ form.addEventListener("submit", (event) => {
   const genero = document.querySelector('input[name="genero"]:checked').value;
   const nombre = nombre_input.value;
   const hora = horaActual;
+  const idioma = document.querySelector('input[name="idioma"]:checked').value;
 
-  div.innerHTML = "<p> " + saludar(nombre, genero, edad, hora) + "</p>";
+  div.innerHTML = "<p> " + saludar(nombre, genero, edad, hora, idioma) + "</p>";
 });
