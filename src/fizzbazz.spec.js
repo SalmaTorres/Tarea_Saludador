@@ -21,4 +21,7 @@ describe("Fizzbazz", () => {
         expect(generarFizzbazz(5)).toEqual("Bazz");
     });
 
+    it("deberia generar Bazz para un numero que siga esa regla con los multiplos de 5", () => {
+        expect(generarFizzbazz(10)).toEqual("Bazz");
+    });
 })
