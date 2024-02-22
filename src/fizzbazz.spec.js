@@ -17,4 +17,8 @@ describe("Fizzbazz", () => {
         expect(generarFizzbazz(6)).toEqual("Fizz");
     });
 
+    it("deberia generar Bazz para un numero que siga esa regla con el nro 5", () => {
+        expect(generarFizzbazz(5)).toEqual("Bazz");
+    });
+
 })
